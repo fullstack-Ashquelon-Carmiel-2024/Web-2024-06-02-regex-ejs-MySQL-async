@@ -62,3 +62,17 @@ console.log(str3.replace(/[2-7a\-e]/g,'&'))
  * 2. and cancel \
  */
 
+console.log(str3.replace(/[2-7a\\-eD-L]/g,'&'))
+
+console.log(str3.replace(/[T-d]/g,'&'))
+
+let str4 = 'שבועות שמח!'
+console.log(str4.replace(/[מ-ק]/g,'&'))
+
+if ('A'>'D') {
+    console.log('A bigger than D')
+} else {
+    console.log('A smaller than D')
+
+}
+
