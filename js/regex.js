@@ -26,10 +26,16 @@ console.log(str1.replace(/cr/i,'fl'));
 console.log('With regular expression with "i" and "g":')
 console.log(str1.replace(/cr/gi,'fl'));
 
-let str2 = `If you have sHOOt, sHoot, don't talk!`
+let str2 = `If you have to sHOOt, sHoot, don't talk!`
 
 /*** MISSION:
  * replace each "shoot" by "jump"
  */
+console.log(str2.replace(/shoot/ig,'jump'))
 
+// [fhs] - list of characters, equivalent to "or 'f' or 'h' or 's'"
+console.log(str2.replace(/[fhs]/ig,'$'))
 
+/** MISSION:
+ * replace all "o",spaces,and ' by 0
+ */
