@@ -39,3 +39,26 @@ console.log(str2.replace(/[fhs]/ig,'$'))
 /** MISSION:
  * replace all "o",spaces,and ' by 0
  */
+console.log(str2.replace(/[o ']/gi,'0'))
+
+let str3 = `1,1,1 - littlE dog run, 2,2,2 - \\cat sEe you,
+            3,3,3 - bIRd on THE TREe`
+
+//console.log(str3.replace(/[0123456789]/g,'&'))   
+// INSTEAD of this we will  use RANGE:
+console.log(str3.replace(/[0-9]/g,'&'))      
+console.log(str3.replace(/[2-7a-e]/g,'&'))  
+
+// \ - ESCAPE character, cancels the special meaning 
+// of the next character
+console.log(`If you have to sHOOt, sHoot, don't talk!`)
+console.log("If you have to sHOOt, sHoot, don't talk!")
+console.log('If you have to sHOOt, sHoot, don\'t talk!')
+
+console.log(str3.replace(/[2-7a\-e]/g,'&'))  
+
+/** MISSION:
+ * 1. To the previous add also the range of D-L
+ * 2. and cancel \
+ */
+
