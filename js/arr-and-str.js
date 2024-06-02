@@ -10,3 +10,9 @@ const foods = ['lasagna','pizza','pasta','calzona','shwarma','hamburger','reviol
 /** MISSION: write a command that will replace 'shwarma' and 'hamburger' 
  * by 'soup' and 'potatoes'
 */
+
+console.log('before:\n', foods)
+
+foods.splice(4,2,'soup','potatoes')
+
+console.log('after:\n', foods)
